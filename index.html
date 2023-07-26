@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ruby Recruiting - Recruiting for All</title>
+  </head>
+  <body>
+    <h1 id="title">Welcome to Ruby Recruiting</h1>
+    <p id="description">Armed with our vast network, Ruby Recruiting is here to help you make your next career move. Are you ready?</p>
+    <p id="intro">First, please fill out our survey. This will help us put you in contact with the correct member of our team. Let's get started!</p>
+<!-- Form Start, name and email inputs -->
+    <form id="survey-form" action="">
+      <label for="name" id="name-label">Full Name <input class="input-width" name="name" id="name" type="text" placeholder="Please enter your full name" required></label>
+      <label for="email" id="email-label">Email Address <input class="input-width" name="email" id="email" type="email" placeholder="Please provide a good email to contact you" required></label>
+<!-- Dropdown, years of experience input -->
+      <label for="dropdown">Target Industry: 
+        <select class="input-width" name="industry" id="dropdown" required>
+          <option>(select one)</option>
+          <option>Project Management</option>
+          <option>Accounting</option>
+          <option>Finance</option>
+          <option>Administration</option>
+          <option>Healthcare</option>
+          <option>Legal</option>
+        </select>
+      </label>
+      <label for="number" id="number-label">Years of experience: <input class="input-width" name="number" id="number" type="number" min="0" max="50" placeholder="#" required></label>
+<!-- Radio buttons -->
+      <label for="Past-History" id="radio-label">Have you used our services before?
+        <label name="Past-History" for="Yes">
+          <input name="Past-History" id="Yes" type="radio" value="yes" required>Yes
+        </label>
+        <label name="Past-History" for="No">
+          <input name="Past-History" id="No" type="radio" value="no" required>No
+        </label>
+      </label>
+<!-- Checkboxes -->
+      <label for="referral" id="checkbox-label">How did you hear about us?</label>
+      <label for="Google-Search" class="checkbox-label">
+        <input name="referral" id="Google-Search" type="checkbox" value="Google-Search">Google Search
+      </label>
+      <label for="LinkedIn" class="checkbox-label">
+        <input name="referral" id="LinkedIn" type="checkbox" value="LinkedIn">LinkedIn
+      </label>
+      <label for="Website" class="checkbox-label">
+        <input name="referral" id="Website" type="checkbox" value="Website">Ruby Recruiting Website
+      </label>
+      <label for="Friends-Family" class="checkbox-label">
+        <input name="referral" id="Friends-Family" type="checkbox" value="Friends-Family">Friends/Family
+      </label>
+<!-- TextField -->
+      <label for="additional-info">Tell us about yourself and your professional goals!
+        <textarea class="input-width" id="additional-info" name="additional-info" rows="4" cols="40"></textarea>
+      </label>
+    </form>
+<!-- Submit Button -->
+    <label for="submit">
+      <input name="submit" id="submit" type="submit">
+    </label>
+  </body>
+</html>
